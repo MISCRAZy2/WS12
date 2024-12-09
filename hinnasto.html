@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hinnasto | Echoroom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles_hinnasto.css">
+    <link rel="icon" href="./images/Picture1.png" type="image/x-icon">
+</head>
+
+<body>
+      <!-- Navigation -->
+       <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="./images/Picture1.png" alt="Echoroom Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Aloitus</a></li>
+            <li><a href="forms.html">Meille töihin?</a></li>
+            <li><a href="hinnasto.html">Hinnasto</a></li>
+            <li><a href="services.html">Mitä teemme?</a></li>
+        </ul>
+        <button class="language-selector">FI</button>
+        <div class="language-selector">
+            <select>
+                <option value="fi">Suomi</option>
+                <option value="sv">Ruotsi</option>
+                <option value="en">Englanti</option>
+            </select>
+        </div>
+        
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul class="mobile-menu">
+        <li><a href="index.html">Aloitus</a></li>
+        <li><a href="forms.html">Meille töihin?</a></li>
+        <li><a href="hinnasto.html">Hinnasto</a></li>
+        <li><a href="services.html">Mitä teemme?</a></li>
+    </ul>
+
+    <!-- Pricing Section -->
+    <section class="pricing py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Hinnasto</h2>
+            <p class="text-center text-light mb-5">Me tarjoamme räätälöityjä akustiikkaratkaisuja. Katso alta hinnastomme tai ota yhteyttä saadaksesi tarkempia tietoja ja tarjouksia.</p>
+
+            <!-- Section 1: Yrityksille -->
+            <div class="mb-4">
+                <h3 class="text-center text-light">Yrityksille</h3>
+                <table class="table table-dark table-striped text-center mt-3">
+                    <thead>
+                        <tr>
+                            <th>Palvelu</th>
+                            <th>Hinta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pienyrityksen akustiikkaratkaisut</td>
+                            <td>€500</td>
+                        </tr>
+                        <tr>
+                            <td>Toimistotilojen akustiikka</td>
+                            <td>€1200</td>
+                        </tr>
+                        <tr>
+                            <td>Kokoustilojen suunnittelu</td>
+                            <td>€850</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Section 2: Kotiin -->
+            <div class="mb-4">
+                <h3 class="text-center text-light">Kotiin</h3>
+                <table class="table table-dark table-striped text-center mt-3">
+                    <thead>
+                        <tr>
+                            <th>Palvelu</th>
+                            <th>Hinta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Perheen akustiikkaratkaisut</td>
+                            <td>€350</td>
+                        </tr>
+                        <tr>
+                            <td>Äänieristys makuuhuoneeseen</td>
+                            <td>€250</td>
+                        </tr>
+                        <tr>
+                            <td>Harrastetilan suunnittelu</td>
+                            <td>€450</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Section 3: Erikoispalvelut -->
+            <div>
+                <h3 class="text-center text-light">Erikoispalvelut</h3>
+                <table class="table table-dark table-striped text-center mt-3">
+                    <thead>
+                        <tr>
+                            <th>Palvelu</th>
+                            <th>Hinta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Äänitysstudion suunnittelu</td>
+                            <td>€2000</td>
+                        </tr>
+                        <tr>
+                            <td>Teatteritilojen akustiikka</td>
+                            <td>€3500</td>
+                        </tr>
+                        <tr>
+                            <td>Custom-ratkaisut</td>
+                            <td>Pyydä tarjous</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Offer Form -->
+    <section class="form-section py-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Pyydä räätälöity tarjous</h2>
+            <form id="custom-offer-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nimi</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Syötä nimesi" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Sähköposti</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Syötä sähköpostiosoitteesi" required>
+                </div>
+                <div class="mb-3">
+                    <label for="service" class="form-label">Valitse palvelu</label>
+                    <select id="service" name="service" class="form-select">
+                        <option value="yritykset">Yrityksen akustiikkaratkaisut</option>
+                        <option value="koti">Kodin akustiikkaratkaisut</option>
+                        <option value="erikois">Erikoispalvelut</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Viesti</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Kerro lisää tarpeistasi"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Lähetä</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark py-3">
+        <p>&copy; 2024 Echoroom Akustiikka</p>
+    </footer>
+
+    <script>
+        // Language selector functionality
+        const languageSelector = document.getElementById('language-selector');
+        languageSelector.addEventListener('change', function () {
+            const selectedLanguage = this.value;
+            alert('Kieli vaihdettu: ' + (selectedLanguage === 'fi' ? 'Suomi' : selectedLanguage === 'sv' ? 'Svenska' : 'English'));
+        });
+
+        // Form submission
+        const form = document.getElementById('custom-offer-form');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Tarjouspyyntö lähetetty! Otamme yhteyttä mahdollisimman pian.');
+            form.reset();
+        });
+    
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
