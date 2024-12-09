@@ -1,0 +1,194 @@
+
+
+body {
+    font-family: 'Merriweather', 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f;
+    color: rgb(37, 37, 37);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: white;
+}
+h1 {
+    color: white; /* Make the heading text white */
+    background-color: #2f2f2f; /* Ensure the background is the same as the overall background */
+    padding: 20px; /* Optional: add padding to give space around the text */
+    text-align: center; /* Optional: center the text */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #007BFF;
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 1001;
+    padding: 10px 0;
+}
+
+.mobile-menu li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Carousel Section */
+.carousel-container {
+    padding: 30px;
+    background-color: #383838;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 400px;
+}
+
+/* Smaller Images Section */
+.small-images {
+    background-color: #383838;
+    padding: 30px 0;
+}
+
+.small-images .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the columns */
+    flex-wrap: wrap; /* Ensures the images wrap if there's not enough space */
+}
+
+.small-images .col-md-3 {
+    text-align: center;
+    flex: 1; /* Ensures that columns are flexible */
+    max-width: 250px; /* Optional: ensures images do not stretch too wide */
+    box-sizing: border-box;
+}
+
+.small-images img {
+    width: 100%; /* Makes sure the image fills its container */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images maintain aspect ratio without distortion */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Change text color inside the carousel */
+.carousel-caption {
+    color: white; /* Set the text color to white */
+}
+
+.carousel-caption h5, 
+.carousel-caption p {
+    color: white; /* Ensure both the heading and paragraph text are white */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .mobile-menu.active {
+        display: flex; /* This makes the menu visible */
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        height: 200px; /* Set a specific height for smaller screens */
+    }
+
+    .carousel-caption {
+        text-align: center;
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem; /* Make the title smaller on mobile */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Adjust the description text size */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.5); /* Slightly darken the controls for better visibility */
+        height: 30px;
+        width: 30px;
+    }
+
+    .carousel {
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
